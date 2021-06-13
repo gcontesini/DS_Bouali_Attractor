@@ -6,24 +6,18 @@ Similate the Bouali Attractor, [insert theory and background bibliography here]
 
 System Differential Equation ( dimensionless )
 
-$\frac{d}{dt}x = \alpha[ y - x(b+1) - f(x)]$
+$\frac{dx}{dt} = \alpha \cdot (1 - y )\cdotx - \beta \cdot z$
 
-$\frac{d}{dt}y = x-y+z$
+$\frac{dy}{dt} = -1.0 \cdot (1-x^{2})\cdot y$
 
-$\frac{d}{dt}z = -\beta y+\epsilon z$
+$\frac{dz}{dt} = \mu \cdot x$
 
-and  input current $f(x)$
-
-$f(x)=a \tanh(\phi x)$
 
 ## Parameters
 
-$a= -0.428$
-$b= -0.614$
-$\phi = 2.0$
-$\alpha = 9.0$
-$\beta = 15.0$
-$\epsilon = 0.125$
+$\alpha = 3.0$
+$\beta = 2.2$
+$\mu = 0.001$
 
 ## Method
 
@@ -35,41 +29,49 @@ time_step = 0.01
 
 ### Initial Conditions
 
-$x_0 = 0.15$
-$y_0 = 0.15$
-$z_0 = 0.15$
+$x_0 = 1$
+$y_0 = 1$
+$z_0 = 0$
 
 for the Lyapunov calculation a $\delta=1e^{-6}$ was add to the original IC.
 
 ## Results 
 
-![original Bouali attractor](url here)
+![original Bouali attractor](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/ts_bouali_attractor.png)
 
-![x time series](url here)
+![x time series](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_attractor_x_ts.png)
 
-![y time series](url here)
+![y time series](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_attractor_y_ts.png)
 
-![z time series](url here)
+![z time series](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_attractor_z_ts.png)
 
-![Lyapunov Exponent](url here)
+**WRONG** don't just blindly copy and paste
 
-With a lyapunov exponent of $0.132756$ and a Lyapunov time of $ $, after 
+![Lyapunov Exponent](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_attractor_lyapunov_exp.png)
+
+**WRONG** don't just blindly copy and paste
+
+With a lyapunov exponent of $a nº$ and a Lyapunov time of $ $, after 
 60 interactions delta becames stochastic.[note that de plot is on a y-semi-logscale]
 
 ## Stability Points
 
-The Stability points can be achieve by open the circuit
+**WRONG** don't just blindly copy and paste
 
-$i^{\star}(x)= -x\cdot(\frac{\epsilon}{(\beta+\epsilon)}+b)$
+<!-- The Stability points can be achieve by open the circuit -->
 
-When the circuit is open, the current
-First Stable Points$x=1.1686\hspace{0.25cm}  y=0.0096\hspace{0.25cm}  z=-1.1589$
+<!-- $i^{\star}(x)= -x\cdot(\frac{\epsilon}{(\beta+\epsilon)}+b)$ -->
 
-$x=-1.1686\hspace{0.25cm}  y=-0.0096\hspace{0.25cm}  z=1.1589$
+<!-- When the circuit is open, the current -->
+<!-- First Stable Points$x=1.1686\hspace{0.25cm}  y=0.0096\hspace{0.25cm}  z=-1.1589$ -->
 
-![First Stable Point](url)
+<!-- $x=-1.1686\hspace{0.25cm}  y=-0.0096\hspace{0.25cm}  z=1.1589$ -->
 
-![Second Stable Point](url)
+![First Stable Point](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/ts_Bouali_attractor_SSP.png)
+
+![Second Stable Point](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/ts_Bouali_attractor_FSP.png)
+
+**WRONG** don't just blindly copy and paste
 
 ## Taken's Theorem
 
@@ -77,14 +79,19 @@ Reconstruction of the Lorenz attractor based on taken's theorem
 
 The lag was no optimized so these plots can have way more information.
 
-This is black magic for sure! That is much more one can extract from Taken's Theorem, but I'm lazy go read some classical dynamical system papers.
+That is much more one can extract from Taken's Theorem, but I'm lazy go read some classical dynamical system papers.
 
-![only x time series](url)
+**WRONG** don't just blindly copy and paste
 
-![only y time series](url)
+![only x time series](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_x_takens_theorem.png)
 
-![only z time series](url)
+![only y time series](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_y_takens_theorem.png)
+
+![only z time series](https://github.com/gcontesini/DS_Bouali_Attractor/blob/master/bouali_z_takens_theorem.png)
+
+**WRONG** don't just blindly copy and paste
 
 ## Reference
 
+The usual
 
