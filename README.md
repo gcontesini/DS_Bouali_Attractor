@@ -6,7 +6,7 @@ Similate the Bouali Attractor, [insert theory and background bibliography here]
 
 System Differential Equation ( dimensionless )
 
-$\frac{dx}{dt} = \alpha \cdot (1 - y )\cdotx - \beta \cdot z$
+$\frac{dx}{dt} = \alpha \cdot (1 - y )\cdot x - \beta \cdot z$
 
 $\frac{dy}{dt} = -1.0 \cdot (1-x^{2})\cdot y$
 
